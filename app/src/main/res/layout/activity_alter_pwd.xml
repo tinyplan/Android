@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlterPwdActivity">
+
+    <EditText
+        android:id="@+id/et_newPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tv_newPwd"
+        android:layout_width="98dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:gravity="center"
+        android:text="请输入新密码:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_newPwd"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="修改密码"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:gravity="center"
+        android:text="请确认密码:"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_confirm"
+        app:layout_constraintEnd_toStartOf="@+id/et_confirm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        android:ems="10"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/et_newPwd" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="提交修改"
+        app:layout_constraintEnd_toStartOf="@+id/bt_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirm" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="取消"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_submit"
+        app:layout_constraintEnd_toEndOf="@+id/et_confirm" />
+</android.support.constraint.ConstraintLayout>

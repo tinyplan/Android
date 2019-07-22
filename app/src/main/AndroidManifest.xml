@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalwork189050934">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_desk"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_desk"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:label="理财助手"
+            android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="修改密码"
+            android:name=".AlterPwdActivity">
+
+        </activity>
+        <activity
+            android:label="增加支出"
+            android:name=".ExpendAddActivity">
+
+        </activity>
+        <activity
+            android:label="增加收入"
+            android:name=".IncomeAddActivity">
+
+        </activity>
+        <activity
+            android:label="注册"
+            android:name=".RegisterActivity">
+
+        </activity>
+        <activity
+            android:label="首页"
+            android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">个人理财助手</string>
+    <string name="title_home">首页</string>
+    <string name="title_income">收入</string>
+    <string name="title_expend">支出</string>
+    <string name="title_me">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
