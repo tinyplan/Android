@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class MyDbHelper extends SQLiteOpenHelper {
     private static final String CREATE_USER="create table user (" +
                                         "id integer primary key autoincrement," +
-                                        "account text," +
+                                "account text," +
                                         "password text)";
     private static final String CREATE_INCOME="create table income("+
                                         "id integer primary key autoincrement,"+
